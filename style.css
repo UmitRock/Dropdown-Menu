@@ -1,0 +1,54 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #eaeaea;
+}
+.menu{
+    margin: auto;
+    width: 20em;
+    margin-top: 20vh;
+}
+.menu ion-icon{
+    font-size: 2em;
+    border-radius: 30%;
+    padding: .25em;
+    background-color: #eee;
+    box-shadow: 10px 10px 30px #ccc, 
+    -10px -10px 30px #dcdcdc;
+    transition: .25s;
+}
+.menu ion-icon:hover{
+    color: #e42;
+}
+.links{
+    display: none;
+    animation: grow 1s ease-in-out;
+}
+@keyframes grow{
+    0%{
+        transform: translateY(-5em);
+        height: 0;
+        opacity: 0;
+    }
+    35%{
+        opacity: 0;
+    }
+}
+.links a{
+    display: block;
+    margin: 1em;
+    margin-left: 0;
+    transition-delay: .5s;
+    color: #000;
+    text-decoration: none;
+}
+.links p{
+    opacity: 0;
+    display: inline-block;
+    vertical-align: text-bottom;
+    margin-left: 1em;
+    transition: .5s;
+}
+.links a:hover > p{
+    opacity: 1;
+}
